@@ -1,4 +1,5 @@
 import data from './data.js'
+// import dataSlide from './data.js'
 
 const titleH1 = document.querySelector('#title')
 const descriptionP = document.querySelector('#description')
@@ -20,7 +21,7 @@ const showNextQuestion = () => {
     questionIndex = questionIndex % questions.length
     qCardP.innerHTML = questions[questionIndex].q
     aCardP.innerHTML = questions[questionIndex].a
-    
+
     scoreP.innerHTML = `Score ${questionIndex + 1}/${questions.length}`
   }
 
